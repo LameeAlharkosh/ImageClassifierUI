@@ -8,7 +8,7 @@ using Microsoft.ML.Data;
 
 namespace ImageClassifierUI
 {
-    // 1. كلاس الفورم (Form1) يجب أن يكون هو الأول دائماً لكي يعمل الـ Designer
+    // 1. The Form class (Form1) must always be the first class in the file for the Designer to work properly
     public partial class Form1 : Form
     {
         private PredictionEngine<ImageData, ImagePrediction>? _engine;
@@ -130,7 +130,7 @@ namespace ImageClassifierUI
         }
     }
 
-    // 2. الكلاسات الإضافية توضع دائماً في أسفل الملف بعد الانتهاء من الفورم
+    // 2. Additional classes must always be placed at the bottom of the file after the Form class
     public class ImageData
     {
         public string ImagePath { get; set; } = "";
